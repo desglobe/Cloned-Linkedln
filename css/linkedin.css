@@ -1798,7 +1798,7 @@ p:nth-child(3) {
   border-radius: 5px;
   min-height: 18vh;
   position: relative;
-  top: -2690px;
+  top: -3838px;
   left: 905px;
 }
 
@@ -1842,7 +1842,7 @@ p:nth-child(3) {
   border-radius: 5px;
   min-height: 38vh;
   position: relative;
-  top: -2675px;
+  top: -3820px;
   left: 905px;
 }
 
@@ -1854,7 +1854,7 @@ p:nth-child(3) {
   border-radius: 5px;
   min-height: 91vh;
   position: relative;
-  top: -2650px;
+  top: -3795px;
   left: 905px;
 }
 
@@ -1933,7 +1933,7 @@ p:nth-child(3) {
   border-radius: 5px;
   min-height: 91vh;
   position: relative;
-  top: -2620px;
+  top: -3770px;
   left: 905px;
 }
 
@@ -1990,5 +1990,101 @@ p:nth-child(3) {
   position: absolute;
   top: 535px;
   left: 185px;
+}
+
+/* Footer section */
+#footer {
+  background: #ffffff;
+  max-width: 1110px;
+  min-height: 40vh;
+  position: relative;
+  top: -810px;
+  left: 100px;
+  border-radius: 10px;
+}
+
+.footer-section {
+  width: 470px;
+  position: absolute;
+  top: 0;
+  min-height: 25vh;
+  left: 0;
+}
+
+.foologo img {
+  width: 90px;
+  height: 20px;
+}
+
+.footlinks {
+  margin-top: 8px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 43px;
+  row-gap: 10px;
+}
+
+.foot-link {
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: #86888a;
+}
+
+.foot-link .fa-chevron-down {
+  font-size: 12px;
+  position: absolute;
+  left: 85px;
+  top: 96px;
+  color: #86888a;
+}
+
+.foot-link:hover {
+  color: #0077b5;
+  text-decoration: underline;
+}
+
+.foot2 {
+  width: 300px;
+  position: absolute;
+  top: 34px;
+  min-height: 15vh;
+  left: 565px;
+}
+
+.fa-cog,
+.fa-question-circle {
+  font-size: 25px;
+  color: #313335;
+}
+
+.question {
+  display: flex;
+  gap: 10px;
+}
+
+.settings {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.Help-Settings a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #313335;
+}
+
+.Help-Settings a:hover {
+  color: #0077b5;
+  text-decoration: underline;
+}
+
+.Help-Settings p {
+  font-size: 0.8rem;
+  color: #86888a;
 }
 /*# sourceMappingURL=linkedin.css.map */
