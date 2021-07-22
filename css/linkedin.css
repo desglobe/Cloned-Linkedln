@@ -20,6 +20,8 @@
 body {
   font-family: "Lato", sans-serif;
   font-size: 100%;
+  position: relative;
+  height: 700px;
 }
 
 #top-header {
@@ -127,8 +129,14 @@ nav .nav-links li a {
   background: none;
   cursor: pointer;
   position: absolute;
-  top: -16px;
-  right: -8px;
+  top: -13px;
+  right: -9px;
+}
+
+.arrow:hover,
+.arrows:hover {
+  border: none;
+  background: none;
 }
 
 .arrows {
@@ -136,8 +144,8 @@ nav .nav-links li a {
   background: none;
   cursor: pointer;
   position: absolute;
-  top: 11px;
-  right: 208px;
+  top: 14px;
+  right: 201px;
 }
 
 .fa-sort-down {
@@ -320,13 +328,13 @@ nav .nav-links li a {
   background: #dadcdd;
   width: 100%;
   position: absolute;
-  min-height: 900vh;
+  min-height: 712vh;
 }
 
 .profile-section {
   background: #ffffff;
   max-width: 780px;
-  min-height: 78vh;
+  min-height: 74vh;
   position: relative;
   top: 50px;
   left: 100px;
@@ -522,6 +530,24 @@ button {
   background: #caccce;
   border-radius: 10px;
   max-width: 360px;
+  min-height: 11vh;
+}
+
+.owyin,
+.hiring {
+  display: flex;
+}
+
+.owyin p {
+  flex: 1;
+}
+
+.owyin .fa-pencil-alt,
+.fa-times {
+  font-size: 15px;
+  padding-right: 15px;
+  padding-top: 12px;
+  color: #313335;
 }
 
 .work-det p:nth-child(1) {
@@ -562,6 +588,10 @@ button {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   max-width: 360px;
+}
+
+.hiring p {
+  font-size: 0.9rem;
 }
 
 .get-started p {
@@ -1016,7 +1046,7 @@ button {
 #activity {
   background: #ffffff;
   max-width: 780px;
-  min-height: 52vh;
+  min-height: 49vh;
   top: 640px;
   left: 100px;
   border-radius: 10px;
@@ -1111,7 +1141,7 @@ button {
 #experience {
   background: #ffffff;
   max-width: 780px;
-  min-height: 227vh;
+  min-height: 215vh;
   top: 660px;
   left: 100px;
   border-radius: 10px;
@@ -1446,7 +1476,7 @@ button {
 #skiendorse {
   background: #ffffff;
   max-width: 780px;
-  min-height: 65vh;
+  min-height: 61vh;
   top: 675px;
   left: 100px;
   border-radius: 10px;
@@ -1695,7 +1725,7 @@ button:hover {
 #interests {
   background: #ffffff;
   max-width: 780px;
-  min-height: 63vh;
+  min-height: 59vh;
   top: 710px;
   left: 100px;
   border-radius: 10px;
@@ -1798,7 +1828,7 @@ p:nth-child(3) {
   border-radius: 5px;
   min-height: 18vh;
   position: relative;
-  top: -3838px;
+  top: -3905px;
   left: 905px;
 }
 
@@ -1840,9 +1870,9 @@ p:nth-child(3) {
   background: #ffffff;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  min-height: 38vh;
+  min-height: 35vh;
   position: relative;
-  top: -3820px;
+  top: -3890px;
   left: 905px;
 }
 
@@ -1852,9 +1882,9 @@ p:nth-child(3) {
   background: #ffffff;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  min-height: 91vh;
+  min-height: 86vh;
   position: relative;
-  top: -3795px;
+  top: -3870px;
   left: 905px;
 }
 
@@ -1931,9 +1961,9 @@ p:nth-child(3) {
   background: #ffffff;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  min-height: 91vh;
+  min-height: 86vh;
   position: relative;
-  top: -3770px;
+  top: -3845px;
   left: 905px;
 }
 
@@ -1994,9 +2024,8 @@ p:nth-child(3) {
 
 /* Footer section */
 #footer {
-  background: #ffffff;
   max-width: 1110px;
-  min-height: 40vh;
+  min-height: 25vh;
   position: relative;
   top: -810px;
   left: 100px;
@@ -2029,7 +2058,7 @@ p:nth-child(3) {
 }
 
 .foot-link {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   text-decoration: none;
   color: #86888a;
 }
@@ -2037,7 +2066,7 @@ p:nth-child(3) {
 .foot-link .fa-chevron-down {
   font-size: 12px;
   position: absolute;
-  left: 85px;
+  left: 95px;
   top: 96px;
   color: #86888a;
 }
@@ -2086,5 +2115,49 @@ p:nth-child(3) {
 .Help-Settings p {
   font-size: 0.8rem;
   color: #86888a;
+}
+
+.language {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 270px;
+  margin-top: -85px;
+}
+
+.langu p {
+  font-size: 0.8rem;
+  color: #86888a;
+}
+
+.scch input[type="search"] {
+  width: 275px;
+  height: 35px;
+  cursor: default;
+  margin-top: 3px;
+  border: 1px solid;
+  padding-left: 7px;
+  border-radius: 5px;
+  background: url(../images/caret-down-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 240px;
+}
+
+.scch input[type="search"]:hover {
+  border: 2px solid;
+  transition: 0.2s;
+}
+
+.scch input[type="search"]:focus {
+  outline: none;
+  border: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1), 0 0 6px rgba(42, 122, 241, 0.6);
+}
+
+.copy p {
+  font-size: 0.9rem;
+  color: #86888a;
+  padding-top: 25px;
 }
 /*# sourceMappingURL=linkedin.css.map */
