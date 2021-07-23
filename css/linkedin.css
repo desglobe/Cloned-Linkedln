@@ -328,13 +328,13 @@ nav .nav-links li a {
   background: #dadcdd;
   width: 100%;
   position: absolute;
-  min-height: 712vh;
+  min-height: 750vh;
 }
 
 .profile-section {
   background: #ffffff;
   max-width: 780px;
-  min-height: 74vh;
+  min-height: 78vh;
   position: relative;
   top: 50px;
   left: 100px;
@@ -342,7 +342,7 @@ nav .nav-links li a {
 }
 
 .profile-section .profile-back {
-  background: url(../images/bg-profileimage.png);
+  background: url(../images/profile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -363,7 +363,7 @@ nav .nav-links li a {
 .bashlop {
   width: 170px;
   height: 170px;
-  background: url(../images/desglobe_.jpg);
+  background: url(../images/profile.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -379,6 +379,12 @@ nav .nav-links li a {
 .rush {
   position: relative;
   top: -22px;
+}
+
+.giggle {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
 }
 
 /* Profile Details Container */
@@ -1141,8 +1147,8 @@ button {
 #experience {
   background: #ffffff;
   max-width: 780px;
-  min-height: 215vh;
-  top: 660px;
+  min-height: 227vh;
+  top: 677px;
   left: 100px;
   border-radius: 10px;
   position: relative;
@@ -1477,7 +1483,7 @@ button {
   background: #ffffff;
   max-width: 780px;
   min-height: 61vh;
-  top: 675px;
+  top: 695px;
   left: 100px;
   border-radius: 10px;
   position: relative;
@@ -1654,7 +1660,7 @@ button:hover {
   background: #ffffff;
   max-width: 780px;
   min-height: 41vh;
-  top: 695px;
+  top: 745px;
   left: 100px;
   border-radius: 10px;
   position: relative;
@@ -1726,7 +1732,7 @@ button:hover {
   background: #ffffff;
   max-width: 780px;
   min-height: 59vh;
-  top: 710px;
+  top: 765px;
   left: 100px;
   border-radius: 10px;
   position: relative;
@@ -1828,7 +1834,7 @@ p:nth-child(3) {
   border-radius: 5px;
   min-height: 18vh;
   position: relative;
-  top: -3905px;
+  top: -3767px;
   left: 905px;
 }
 
@@ -1845,6 +1851,12 @@ p:nth-child(3) {
 .pro-2 {
   display: flex;
   justify-content: space-between;
+}
+
+.pro-1 .fa-question-circle,
+.pro-2 .fa-question-circle {
+  font-size: 15px;
+  color: #313335;
 }
 
 .profile {
@@ -1870,9 +1882,9 @@ p:nth-child(3) {
   background: #ffffff;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  min-height: 35vh;
+  min-height: 37vh;
   position: relative;
-  top: -3890px;
+  top: -3750px;
   left: 905px;
 }
 
@@ -1960,6 +1972,30 @@ p:nth-child(3) {
   border-radius: 15px;
 }
 
+.tooltip {
+  display: inline-block;
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  position: absolute;
+  top: -120px;
+  left: 50px;
+  visibility: hidden;
+  text-align: center;
+  font-size: 0.8rem;
+  background: #313335;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 5px 0px;
+  width: 112px;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 /* Aside container 3 */
 #asicont2 {
   max-width: 310px;
@@ -1968,7 +2004,7 @@ p:nth-child(3) {
   border-radius: 5px;
   min-height: 86vh;
   position: relative;
-  top: -3870px;
+  top: -3725px;
   left: 905px;
 }
 
@@ -2047,7 +2083,7 @@ p:nth-child(3) {
   border-radius: 5px;
   min-height: 86vh;
   position: relative;
-  top: -3845px;
+  top: -3665px;
   left: 905px;
 }
 
@@ -2111,7 +2147,7 @@ p:nth-child(3) {
   max-width: 1110px;
   min-height: 25vh;
   position: relative;
-  top: -810px;
+  top: -625px;
   left: 100px;
   border-radius: 10px;
 }
