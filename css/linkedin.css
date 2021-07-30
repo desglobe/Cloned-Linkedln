@@ -22,29 +22,32 @@ body {
   font-size: 100%;
   position: relative;
   height: 700px;
+  background: #dadcdd;
 }
 
 #top-header {
   width: 100%;
-  min-height: 7vh;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.2);
+  position: absolute;
   border: none;
 }
 
 .cover {
   display: flex;
+  min-height: 9vh;
+  z-index: 30;
   width: 100%;
-  min-height: 7vh;
-  margin: auto;
-  z-index: 20;
   position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.2);
   background: #ffffff;
 }
 
 .logo-search {
   display: flex;
   flex: 1;
-  margin-left: 165px;
+  margin-left: 120px;
+  margin-top: 2px;
 }
 
 .logo {
@@ -57,13 +60,13 @@ body {
 }
 
 .fa-linkedin {
-  font-size: 40px;
+  font-size: 42px;
   color: #0077b5;
 }
 
 input[type="search"] {
-  width: 250px;
-  height: 35px;
+  width: 275px;
+  height: 37px;
   border: none;
   padding-left: 40px;
   border-radius: 5px;
@@ -76,7 +79,7 @@ input[type="search"] {
 
 input[type="search"]:focus {
   outline: none;
-  width: 400px;
+  width: 390px;
   transition: 0.6s;
 }
 
@@ -84,11 +87,12 @@ input[type="search"]:focus {
 nav {
   flex: 1;
   margin-top: 5px;
-  margin-right: 180px;
+  margin-right: 120px;
 }
 
 nav .nav-links {
   display: flex;
+  gap: 20px;
   padding: 0;
   margin: 0;
   justify-content: space-around;
@@ -118,10 +122,10 @@ nav .nav-links li a {
 
 .ris {
   border-left: 1px solid #caccce;
-  height: 50px;
+  height: 57px;
   position: absolute;
   top: 0px;
-  right: 350px;
+  right: 275px;
 }
 
 .arrow {
@@ -144,8 +148,8 @@ nav .nav-links li a {
   background: none;
   cursor: pointer;
   position: absolute;
-  top: 14px;
-  right: 285px;
+  top: 15px;
+  right: 213px;
 }
 
 .fa-sort-down {
@@ -325,20 +329,37 @@ nav .nav-links li a {
 
 /* Main Background Container */
 #content-bg {
-  background: #dadcdd;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  margin: 20px auto;
   width: 100%;
+  min-height: 745vh;
+}
+
+.rinseo {
+  width: 785px;
   position: absolute;
-  min-height: 675vh;
+  left: 110px;
+  top: 50px;
+  margin-top: 50px;
+}
+
+.musclin {
+  margin-top: 50px;
+  position: absolute;
+  right: 110px;
+  top: 50px;
+  width: 320px;
 }
 
 .profile-section {
   background: #ffffff;
-  max-width: 780px;
-  min-height: 73vh;
+  max-width: 880px;
+  min-height: 82vh;
   position: relative;
-  top: 50px;
-  left: 165px;
-  border-radius: 5px;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
 }
 
 .profile-section .profile-back {
@@ -677,10 +698,10 @@ button {
 .dashboard-section {
   background: #dee6f2;
   max-width: 780px;
-  min-height: 55vh;
+  min-height: 64vh;
   position: relative;
-  top: 605px;
-  left: 165px;
+  top: 15px;
+  left: 0px;
   border-radius: 10px;
 }
 
@@ -847,10 +868,10 @@ button {
 #about {
   background: #ffffff;
   max-width: 780px;
-  min-height: 20vh;
+  min-height: 24vh;
   position: relative;
-  top: 625px;
-  left: 165px;
+  top: 32px;
+  left: 0;
   border-radius: 10px;
 }
 
@@ -932,10 +953,10 @@ button {
 #featured {
   background: #ffffff;
   max-width: 780px;
-  min-height: 54vh;
+  min-height: 61vh;
   position: relative;
-  top: 650px;
-  left: 165px;
+  top: 48px;
+  left: 0;
   border-radius: 10px;
 }
 
@@ -1106,10 +1127,10 @@ button {
 #activity {
   background: #ffffff;
   max-width: 780px;
-  min-height: 43vh;
+  min-height: 52vh;
   position: relative;
-  top: 675px;
-  left: 165px;
+  top: 65px;
+  left: 0;
   border-radius: 10px;
 }
 
@@ -1201,10 +1222,10 @@ button {
 #experience {
   background: #ffffff;
   max-width: 780px;
-  min-height: 207vh;
+  min-height: 233vh;
   position: relative;
-  top: 725px;
-  left: 165px;
+  top: 100px;
+  left: 0;
   border-radius: 10px;
 }
 
@@ -1346,7 +1367,7 @@ button {
   height: 781px;
   transform: rotate(90deg);
   position: absolute;
-  top: -130px;
+  top: -150px;
   left: 360px;
 }
 
@@ -1371,7 +1392,7 @@ button {
   height: 781px;
   transform: rotate(90deg);
   position: absolute;
-  top: 80px;
+  top: 60px;
   left: 360px;
 }
 
@@ -1404,7 +1425,7 @@ button {
   height: 670px;
   transform: rotate(90deg);
   position: absolute;
-  top: 340px;
+  top: 320px;
   left: 415px;
 }
 
@@ -1448,7 +1469,7 @@ button {
   height: 781px;
   transform: rotate(90deg);
   position: absolute;
-  top: 510px;
+  top: 480px;
   left: 360px;
 }
 
@@ -1528,7 +1549,7 @@ button {
   height: 670px;
   transform: rotate(90deg);
   position: absolute;
-  top: 840px;
+  top: 790px;
   left: 415px;
 }
 
@@ -1536,10 +1557,10 @@ button {
 #skiendorse {
   background: #ffffff;
   max-width: 780px;
-  min-height: 55vh;
+  min-height: 65vh;
   position: relative;
-  top: 745px;
-  left: 165px;
+  top: 116px;
+  left: 0;
   border-radius: 10px;
 }
 
@@ -1713,9 +1734,9 @@ button:hover {
 #recommendation {
   background: #ffffff;
   max-width: 780px;
-  min-height: 35vh;
-  top: 793px;
-  left: 165px;
+  min-height: 43vh;
+  top: 160px;
+  left: 0;
   border-radius: 10px;
   position: relative;
 }
@@ -1785,10 +1806,10 @@ button:hover {
 #interests {
   background: #ffffff;
   max-width: 780px;
-  min-height: 50vh;
+  min-height: 57vh;
   position: relative;
-  top: 812px;
-  left: 165px;
+  top: 175px;
+  left: 0;
   border-radius: 10px;
 }
 
@@ -1882,14 +1903,11 @@ p:nth-child(3) {
 
 /* Aside container 1 */
 #asicont {
-  max-width: 310px;
+  width: 320px;
   background: #ffffff;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   min-height: 18vh;
-  position: relative;
-  top: -3738px;
-  left: 990px;
 }
 
 .edit-profile {
@@ -1933,14 +1951,14 @@ p:nth-child(3) {
 
 /* Aside container 2 */
 #asiconts {
-  max-width: 310px;
+  width: 320px;
   background: #ffffff;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  min-height: 34vh;
+  min-height: 39vh;
   position: relative;
-  top: -3722px;
-  left: 990px;
+  top: 25px;
+  right: 0px;
 }
 
 .add-dot {
@@ -2055,14 +2073,14 @@ p:nth-child(3) {
 
 /* Aside container 3 */
 #asicont2 {
-  max-width: 310px;
+  width: 320px;
   background: #ffffff;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  min-height: 78vh;
+  min-height: 95vh;
   position: relative;
-  top: -3705px;
-  left: 990px;
+  top: 50px;
+  right: 0;
 }
 
 .people-view {
@@ -2134,14 +2152,14 @@ p:nth-child(3) {
 
 /* Aside container 4 */
 #asicont3 {
-  max-width: 310px;
+  width: 320px;
   background: #ffffff;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  min-height: 78vh;
+  min-height: 95vh;
   position: relative;
-  top: -3650px;
-  left: 990px;
+  top: 70px;
+  right: 0;
 }
 
 .display-more {
@@ -2149,9 +2167,9 @@ p:nth-child(3) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 310px;
+  width: 320px;
   height: 50px;
-  margin-left: -15px;
+  margin-left: -20px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top: 1px solid #caccce;
@@ -2175,9 +2193,9 @@ p:nth-child(3) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 310px;
+  width: 320px;
   height: 50px;
-  margin-left: -15px;
+  margin-left: -20px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top: 1px solid #caccce;
@@ -2195,7 +2213,7 @@ p:nth-child(3) {
   color: black;
   font-size: 20px;
   position: absolute;
-  top: 535px;
+  top: 525px;
   left: 185px;
 }
 
@@ -2204,8 +2222,8 @@ p:nth-child(3) {
   max-width: 1110px;
   min-height: 25vh;
   position: relative;
-  top: -625px;
-  left: 165px;
+  top: -50px;
+  left: 110px;
   border-radius: 10px;
 }
 
@@ -2338,12 +2356,13 @@ p:nth-child(3) {
   padding-top: 25px;
 }
 
+/* Lower fixed container */
 .footer {
   position: fixed;
   right: 0;
   bottom: 0;
   width: 300px;
-  height: 60px;
+  height: 52px;
   background: #ffffff;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.2);
   border-top-left-radius: 5px;
